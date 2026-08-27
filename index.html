@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="用一句自我介绍、六类问题和 60 秒演练，练会和陌生人自然开口。">
+  <title>陌生人聊天练习｜讲清楚</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./topic.css">
+</head>
+<body>
+  <a class="skip-link" href="#trainer">跳到训练</a>
+  <header class="site-bar">
+    <a class="wordmark" href="./">讲清楚</a>
+    <a class="all-training" href="https://hongye-code.github.io/speak-grow-site/v3-4/web/" target="_blank" rel="noopener">查看全部表达训练</a>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">陌生人聊天练习 · 一次 8 分钟</p>
+        <h1 id="page-title" class="selected-site-title">陌生人聊天练习</h1>
+        <p class="hero-lede">不用背万能话术。先准备一句能说出口的自我介绍，再练六类问题、一个共同点和一次 60 秒对话。</p>
+        <button class="primary" id="start-button" type="button">开始自我介绍</button>
+      </div>
+      <figure class="hero-figure">
+        <img src="./assets/chat-a-image1-clean.png" alt="粉紫与蓝色流动纱幕中的人物侧脸">
+      </figure>
+    </section>
+
+    <section class="workspace" id="trainer" tabindex="-1" aria-labelledby="trainer-title">
+      <div class="workspace-head">
+        <div>
+          <p class="eyebrow">准备区</p>
+          <h2 id="trainer-title">把陌生变成下一句话</h2>
+        </div>
+        <p class="progress-copy" id="progress-copy" aria-live="polite">已准备 0 / 9 项</p>
+      </div>
+      <form id="chat-form" class="steps">
+        <article class="step-card">
+          <div>
+            <h3>一句简短自我介绍</h3>
+            <p>只说对当前场合有用的信息，20 秒内能说完。</p>
+            <label>你准备怎么介绍自己？
+              <textarea id="intro" name="intro" placeholder="例如：你好，我叫……今天来这里是因为……"></textarea>
+            </label>
+          </div>
+        </article>
+        <article class="step-card">
+          <div>
+            <h3>六类问题，各准备一句</h3>
+            <p>问题不是审问。对方回答简短、转移话题或不回答时，就尊重边界。</p>
+            <div class="question-grid">
+              <label class="question-field">姓名<input type="text" name="q-name" placeholder="我应该怎么称呼你？"></label>
+              <label class="question-field">居住地<input type="text" name="q-place" placeholder="你平时也在这附近活动吗？"><small>视场合使用，不追问具体住址。</small></label>
+              <label class="question-field">关系状态<input type="text" name="q-relationship" placeholder="今天是自己来，还是和朋友一起来？"><small>视场合使用，允许对方不回答。</small></label>
+              <label class="question-field">工作<input type="text" name="q-work" placeholder="你最近主要在忙什么？"></label>
+              <label class="question-field">爱好<input type="text" name="q-hobby" placeholder="你平时最常做的放松方式是什么？"></label>
+              <label class="question-field">旅行计划<input type="text" name="q-travel" placeholder="最近有没有特别想去的地方？"></label>
+            </div>
+          </div>
+        </article>
+        <article class="step-card">
+          <div>
+            <h3>接住一个关键词</h3>
+            <p>从对方回答中选一个共同点或值得继续的话题，不急着换题。</p>
+            <label>你听见了哪个关键词？<input type="text" name="keyword" placeholder="例如：徒步、做饭、刚搬来"></label>
+            <label>你准备怎么接？<textarea name="follow-up" placeholder="例如：你刚说到徒步，我也刚开始走城市路线。你最喜欢哪一段？"></textarea></label>
+          </div>
+        </article>
+        <article class="step-card">
+          <div>
+            <h3>把话交回对方</h3>
+            <p>说一点自己的信息，然后留一个容易回答的问题。</p>
+            <label>你的交回句<input type="text" name="handback" placeholder="例如：我一般周末去走，你更喜欢城市路线还是山路？"></label>
+            <details class="tool-drawer">
+              <summary>打开七条谈话技巧</summary>
+              <div class="drawer-body">
+                <ul>
+                  <li>先从当下共同环境开始，不突然打探私人信息。</li>
+                  <li>一次只问一个问题，给对方完整回答的空间。</li>
+                  <li>听见关键词后追问，不急着准备自己的下一段。</li>
+                  <li>开放问题和封闭问题交替使用。</li>
+                  <li>适量分享自己的信息，让交流不是单向采访。</li>
+                  <li>允许停顿，不用每秒都填满。</li>
+                  <li>观察回应长度；对方明显收束时自然结束。</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </article>
+      </form>
+    </section>
+
+    <section class="practice-zone" aria-labelledby="practice-title">
+      <p class="eyebrow">口头演练 · 音频不上传</p>
+      <h2 id="practice-title">现在，完整说 60 秒</h2>
+      <p class="lede">把自我介绍、一个问题、一个关键词接话和交回句连起来。麦克风或语音识别不可用时，直接在原稿框里输入，训练仍然完整。</p>
+      <div class="practice-shell">
+        <div class="practice-card">
+          <label for="transcript">演练原稿</label>
+          <textarea id="transcript" placeholder="录音转写会出现在这里；也可以直接输入。"></textarea>
+          <div class="button-row">
+            <button class="control primary-control" id="record" type="button">开始本地录音</button>
+            <button class="control" id="pause" type="button">暂停录音</button>
+            <button class="control" id="stop" type="button">结束录音</button>
+            <button class="control" id="download" type="button" disabled>下载 WebM</button>
+          </div>
+          <div class="button-row">
+            <button class="control" id="transcribe" type="button">开始浏览器转写</button>
+            <button class="control" id="finish-transcription" type="button">结束转写</button>
+          </div>
+          <p class="status" id="practice-status" role="status">文字和进度只保存在当前浏览器。音频只存在浏览器内存，除非你主动下载。</p>
+        </div>
+        <aside class="practice-card">
+          <p class="timer" id="timer" aria-label="剩余 60 秒">00:60</p>
+          <button class="control primary-control" id="check-feedback" type="button">查看本地反馈</button>
+          <div class="feedback-grid" id="feedback" aria-live="polite"></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><span>不登录 · 不上传音频 · 不调用 AI</span><a href="./legal-notice.html">隐私与使用边界</a></footer>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
